@@ -4,7 +4,7 @@ A simple and responsive **Currency Converter** built with **React, Vite, and Tai
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Project](YOUR_LIVE_PROJECT_LINK)**
+🔗 **[View Live Project](https://currencyconverter-eosin.vercel.app/)**
 
 ## 📂 GitHub Repository
 
