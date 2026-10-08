@@ -1,16 +1,151 @@
-# React + Vite
+# 💱 Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Currency Converter** built with **React, Vite, and Tailwind CSS**. The application fetches currency exchange rates from an external API and allows users to quickly convert between different currencies.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[View Live Project](YOUR_LIVE_PROJECT_LINK)**
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **[Currency Converter – GitHub](https://github.com/umanktiwari00-cmd/Currency-Converter)**
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💰 Enter an amount to convert
+- 🌍 Select from multiple currencies
+- 🔄 Swap the source and target currencies
+- ⚡ Fetches exchange rates dynamically using an API
+- 📱 Responsive user interface
+- 🎨 Clean UI built with Tailwind CSS
+- ⚛️ Reusable React components
+- 🪝 Custom React hook for fetching currency information
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **JavaScript**
+- **Currency API**
+
+## 🔌 API
+
+This project uses the **Fawaz Ahmed Currency API** to retrieve currency exchange rates.
+
+```text
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/
+```
+
+## 🧠 How It Works
+
+The application uses a custom React hook called `useCurrencyInfo`.
+
+When the selected source currency changes, the hook fetches the latest exchange-rate data from the API.
+
+The conversion is then calculated using:
+
+```javascript
+Number(amount) * currencyInfo[to]
+```
+
+The **Swap** button exchanges the source and target currencies and also swaps their corresponding amounts.
+
+## 📁 Project Structure
+
+```text
+Currency-Converter/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── InputBox.jsx
+│   │   └── index.js
+│   │
+│   ├── hooks/
+│   │   └── useCurrencyInfo.js
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/umanktiwari00-cmd/Currency-Converter.git
+```
+
+Navigate into the project:
+
+```bash
+cd Currency-Converter
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal.
+
+## 📸 Preview
+
+Add a screenshot of your application here:
+
+```markdown
+![Currency Converter Preview](./screenshot.png)
+```
+
+## 📚 What I Learned
+
+While building this project, I practiced:
+
+- React functional components
+- `useState` and `useEffect`
+- Creating and using custom hooks
+- API fetching with `fetch()`
+- Handling asynchronous data
+- Passing props between components
+- Controlled inputs
+- Dynamic currency selection
+- Component reusability
+- Tailwind CSS
+- Vite project setup
+
+## 🔮 Future Improvements
+
+- Add loading states
+- Add API error handling
+- Add conversion history
+- Add currency search
+- Add dark mode
+- Display the current exchange rate
+- Improve mobile UI and animations
+
+## 👨‍💻 Author
+
+**Umank Tiwari**
+
+GitHub: [@umanktiwari00-cmd](https://github.com/umanktiwari00-cmd)
+
+---
+
+⭐ If you found this project useful, consider giving the repository a star!
